@@ -1,0 +1,26 @@
+/* .container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../public/landingImage.jpg');
+}
+
+.container p {
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  max-width: 60vw;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 1rem;
+  width: max-content;
+  margin-top: 15rem;
+} */

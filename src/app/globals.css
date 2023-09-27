@@ -3,6 +3,11 @@
   --textColor: black;
   --softBg: #f0f0f0;
   --softTextColor: #626262;
+  --primary-color: #7f2eaf;
+  /* --bg: #0f172a;
+  --textColor: #ddd;
+  --softBg: #1f273a;
+  --softTextColor: #a6a6a6; */
 }
 
 * {
@@ -14,6 +19,7 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
