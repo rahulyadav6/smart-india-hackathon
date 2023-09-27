@@ -1,8 +1,15 @@
 .container {
   position: relative;
-  padding: 5rem;
-  width: max-content;
+  padding: 5rem 3rem;
+  width: 18vw;
   border-radius: 1rem;
+  transition: all 500ms ease;
+  cursor: pointer;
+  box-shadow: 7px 7px 7px skyblue;
+}
+
+.container:hover {
+  transform: scale(1.2);
 }
 
 .img {
@@ -20,5 +27,9 @@
 }
 
 .content h2 {
+  color: white;
+}
+
+.content p {
   color: white;
 }

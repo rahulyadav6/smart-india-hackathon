@@ -1,8 +1,10 @@
 'use client';
+import { useEffect, useState } from 'react';
 import styles from './loginform.module.css';
 import { useSearchParams } from 'next/navigation';
 
 const LoginForm = () => {
+  const [pageType, setPageType] = useState('login')
   const searchParams = useSearchParams();
   const search = searchParams.get('q');
   let header;
@@ -13,6 +15,7 @@ const LoginForm = () => {
   } else {
     header = 'Student Login';
   }
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -20,7 +23,7 @@ const LoginForm = () => {
           <h1>{header}</h1>
           <p>
             Doesn't have an account?{' '}
-            <span className={styles.link}> Sign up</span>
+            <span className={styles.link} onClick={() => setPageType('register')}> Sign up</span>
           </p>
         </div>
         <div className={styles.inputContainer}>

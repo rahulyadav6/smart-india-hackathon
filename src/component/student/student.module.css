@@ -1,5 +1,6 @@
 .container {
   display: grid;
   padding-top: 18rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  transition: all 500ms ease;
 }

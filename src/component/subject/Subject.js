@@ -1,15 +1,22 @@
 import Image from 'next/image';
 import styles from './subject.module.css';
+import { useContext } from 'react';
+import { AppContext } from '@/feature/context';
 
-const Subject = ({ name, img, bgcolor }) => {
-  //   console.log(bgcolor);
+const Subject = ({ name, img, bgcolor, info }) => {
+  const { openModal } = useContext(AppContext);
   return (
-    <div style={{ backgroundColor: `${bgcolor}` }} className={styles.container}>
+    <div
+      onClick={() => openModal(name)}
+      style={{ backgroundColor: `${bgcolor}` }}
+      className={styles.container}
+    >
       <div className={styles.img}>
         <Image src={img} />
       </div>
       <div className={styles.content}>
         <h2>{name}</h2>
+        <p>{info}</p>
       </div>
     </div>
   );
