@@ -11,18 +11,19 @@
     color: white;
 }
 
-.item{
+.items{
     display: flex;
-    flex-direction: column;
     margin-top: 5rem;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
-.item button{
-    padding: 0.8rem;
-    background-color: var(--primary-color);
-    border-radius: 1rem;
-    width: max-content;
-    border: none;
-    color: white;
+.item{
+    flex: 1;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .items{
+        flex-direction: column;
+    }
+  }

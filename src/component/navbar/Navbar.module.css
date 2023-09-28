@@ -8,3 +8,12 @@
 .logo {
   font-size: 3rem;
 }
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .container{
+    flex-direction: column;
+  }
+}

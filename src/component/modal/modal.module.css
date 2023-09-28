@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  max-width: 50vw;
+  width: 50vw;
   display: flex;
   background-color: white;
   padding: 3rem;
@@ -20,12 +20,18 @@
 }
 
 .icon {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   position: absolute;
   color: red;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+  transition: all .5s ease;
+}
+
+
+.icon:hover{
+  transform: scale(1.1);
 }
 
 .grade {
@@ -72,4 +78,11 @@
 .details h1 {
   color: var(--primary-color);
   margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .wrapper{
+    width: 80vw;
+  }
 }

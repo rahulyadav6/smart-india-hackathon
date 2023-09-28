@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import { AppContext } from '@/feature/context';
 
 const Landing = () => {
-  const role = 'Student';
+  const role = 'Teacher';
   const { modalOpen } = useContext(AppContext);
   if (role == 'Student') {
     return (
@@ -21,7 +21,6 @@ const Landing = () => {
   } else if (role == 'Teacher') {
     return (
       <>
-        <HeadSection />
         <Teacher />
       </>
     );

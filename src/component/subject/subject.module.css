@@ -33,3 +33,18 @@
 .content p {
   color: white;
 }
+
+
+@media screen and (max-width: 1024px) {
+  .container{
+    width: 35vw;
+  }
+}
+
+
+
+@media screen and (max-width: 728px) {
+  .container{
+    width: 80vw;
+  }
+}
